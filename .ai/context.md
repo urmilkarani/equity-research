@@ -1,4 +1,4 @@
-# Project Context — Equity Research System
+# Project Context — EquiPulse
 
 This document provides the high-level context and architectural mental model for AI agents working on this project.
 

@@ -1,4 +1,4 @@
-# Equity Research System 📈
+# EquiPulse 📈
 
 An institutional-grade local equity research platform that combines fundamental, technical, and sentiment analysis with automated DCF valuation and AI synthesis.
 
@@ -57,4 +57,4 @@ The system follows a C4-inspired container architecture:
 3. **AI Synthesis**: Merges all data branches into a final institutional-grade Markdown/JSON report.
 
 ---
-Created with ❤️ by Antigravity
+Created with ❤️ by EquiPulse
