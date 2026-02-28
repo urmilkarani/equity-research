@@ -1,0 +1,1 @@
+# Antigravity — Equity Research System

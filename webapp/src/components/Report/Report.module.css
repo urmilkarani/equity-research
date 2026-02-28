@@ -1,0 +1,174 @@
+.report {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-xl);
+    margin-top: 40px;
+}
+
+/* Signal Header */
+.signalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: var(--spacing-lg);
+    border-bottom: 1px solid var(--border-subtle);
+}
+
+.tickerInfo h2 {
+    font-family: var(--font-display);
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 4px;
+}
+
+.marketTag {
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 4px;
+    background: var(--bg-tertiary);
+    color: var(--text-secondary);
+}
+
+.signalBadge {
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-family: var(--font-display);
+    font-weight: 800;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.buySignal {
+    background: rgba(63, 185, 80, 0.15);
+    color: var(--accent-success);
+    border: 1px solid var(--accent-success);
+}
+
+.sellSignal {
+    background: rgba(248, 81, 73, 0.15);
+    color: var(--accent-danger);
+    border: 1px solid var(--accent-danger);
+}
+
+.holdSignal {
+    background: rgba(210, 153, 34, 0.15);
+    color: var(--accent-warning);
+    border: 1px solid var(--accent-warning);
+}
+
+/* Quick Metrics Grid */
+.metricsGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.metricCard {
+    padding: var(--spacing-md);
+    background: var(--bg-secondary);
+    border: 1px solid var(--border-subtle);
+    border-radius: 12px;
+}
+
+.metricLabel {
+    display: block;
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.metricValue {
+    font-family: var(--font-display);
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+/* Sections */
+.section {
+    padding: var(--spacing-xl);
+    margin-bottom: var(--spacing-lg);
+}
+
+.sectionTitle {
+    font-family: var(--font-display);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-lg);
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.sectionTitle svg {
+    color: var(--text-secondary);
+}
+
+/* DCF Cards */
+.dcfGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-md);
+}
+
+.dcfCard {
+    padding: var(--spacing-lg);
+    border-radius: 12px;
+    background: var(--bg-tertiary);
+    text-align: center;
+    border: 1px solid transparent;
+    transition: transform 0.2s ease;
+}
+
+.dcfCard:hover {
+    transform: translateY(-4px);
+    border-color: var(--border-subtle);
+}
+
+.dcfCard.base {
+    border-color: var(--text-secondary);
+}
+
+.dcfLabel {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    margin-bottom: 12px;
+}
+
+.dcfValue {
+    font-family: var(--font-display);
+    font-size: 1.75rem;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+.mos {
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+/* AI Narrative */
+.narrative {
+    line-height: 1.8;
+    color: var(--text-secondary);
+    font-size: 1.1rem;
+}
+
+.narrative p {
+    margin-bottom: var(--spacing-lg);
+}
+
+@media (max-width: 768px) {
+    .signalHeader {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--spacing-lg);
+    }
+
+    .dcfGrid {
+        grid-template-columns: 1fr;
+    }
+}
